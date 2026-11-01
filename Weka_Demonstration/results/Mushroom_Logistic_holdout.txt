@@ -1,0 +1,425 @@
+
+Options: -F "weka.filters.MultiFilter -F "weka.filters.unsupervised.attribute.ReplaceMissingValues" -F "weka.filters.unsupervised.attribute.NominalToBinary" -F "weka.filters.unsupervised.attribute.RemoveUseless -M 100.0" -F "weka.filters.unsupervised.attribute.Standardize"" -W weka.classifiers.functions.Logistic -- -R 1.0E-8 -M 1000 
+
+=== Classifier model (full training set) ===
+
+FilteredClassifier using weka.classifiers.functions.Logistic -R 1.0E-8 -M 1000 -num-decimal-places 4 on data filtered through weka.filters.MultiFilter -F "weka.filters.unsupervised.attribute.ReplaceMissingValues " -F "weka.filters.unsupervised.attribute.NominalToBinary -R first-last" -F "weka.filters.unsupervised.attribute.RemoveUseless -M 100.0" -F "weka.filters.unsupervised.attribute.Standardize " -S -1893870233
+
+Filtered Header
+@relation 'Mushroom-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NominalToBinary-Rfirst-last-weka.filters.unsupervised.attribute.RemoveUseless-M100.0-weka.filters.unsupervised.attribute.Standardize-weka.filters.MultiFilter-Fweka.filters.unsupervised.attribute.ReplaceMissingValues-Fweka.filters.unsupervised.attribute.NominalToBinary -R first-last-Fweka.filters.unsupervised.attribute.RemoveUseless -M 100.0-Fweka.filters.unsupervised.attribute.Standardize-S-1893870233'
+
+@attribute cap-shape=b numeric
+@attribute cap-shape=c numeric
+@attribute cap-shape=f numeric
+@attribute cap-shape=k numeric
+@attribute cap-shape=s numeric
+@attribute cap-shape=x numeric
+@attribute cap-surface=f numeric
+@attribute cap-surface=g numeric
+@attribute cap-surface=s numeric
+@attribute cap-surface=y numeric
+@attribute cap-color=b numeric
+@attribute cap-color=c numeric
+@attribute cap-color=e numeric
+@attribute cap-color=g numeric
+@attribute cap-color=n numeric
+@attribute cap-color=p numeric
+@attribute cap-color=r numeric
+@attribute cap-color=u numeric
+@attribute cap-color=w numeric
+@attribute cap-color=y numeric
+@attribute bruises=t numeric
+@attribute odor=a numeric
+@attribute odor=c numeric
+@attribute odor=f numeric
+@attribute odor=l numeric
+@attribute odor=m numeric
+@attribute odor=n numeric
+@attribute odor=p numeric
+@attribute odor=s numeric
+@attribute odor=y numeric
+@attribute gill-attachment=f numeric
+@attribute gill-spacing=w numeric
+@attribute gill-size=n numeric
+@attribute gill-color=b numeric
+@attribute gill-color=e numeric
+@attribute gill-color=g numeric
+@attribute gill-color=h numeric
+@attribute gill-color=k numeric
+@attribute gill-color=n numeric
+@attribute gill-color=o numeric
+@attribute gill-color=p numeric
+@attribute gill-color=r numeric
+@attribute gill-color=u numeric
+@attribute gill-color=w numeric
+@attribute gill-color=y numeric
+@attribute stalk-shape=t numeric
+@attribute stalk-root=b numeric
+@attribute stalk-root=c numeric
+@attribute stalk-root=e numeric
+@attribute stalk-root=r numeric
+@attribute stalk-surface-above-ring=f numeric
+@attribute stalk-surface-above-ring=k numeric
+@attribute stalk-surface-above-ring=s numeric
+@attribute stalk-surface-above-ring=y numeric
+@attribute stalk-surface-below-ring=f numeric
+@attribute stalk-surface-below-ring=k numeric
+@attribute stalk-surface-below-ring=s numeric
+@attribute stalk-surface-below-ring=y numeric
+@attribute stalk-color-above-ring=b numeric
+@attribute stalk-color-above-ring=c numeric
+@attribute stalk-color-above-ring=e numeric
+@attribute stalk-color-above-ring=g numeric
+@attribute stalk-color-above-ring=n numeric
+@attribute stalk-color-above-ring=o numeric
+@attribute stalk-color-above-ring=p numeric
+@attribute stalk-color-above-ring=w numeric
+@attribute stalk-color-above-ring=y numeric
+@attribute stalk-color-below-ring=b numeric
+@attribute stalk-color-below-ring=c numeric
+@attribute stalk-color-below-ring=e numeric
+@attribute stalk-color-below-ring=g numeric
+@attribute stalk-color-below-ring=n numeric
+@attribute stalk-color-below-ring=o numeric
+@attribute stalk-color-below-ring=p numeric
+@attribute stalk-color-below-ring=w numeric
+@attribute stalk-color-below-ring=y numeric
+@attribute veil-color=n numeric
+@attribute veil-color=o numeric
+@attribute veil-color=w numeric
+@attribute veil-color=y numeric
+@attribute ring-number=n numeric
+@attribute ring-number=o numeric
+@attribute ring-number=t numeric
+@attribute ring-type=e numeric
+@attribute ring-type=f numeric
+@attribute ring-type=l numeric
+@attribute ring-type=n numeric
+@attribute ring-type=p numeric
+@attribute spore-print-color=b numeric
+@attribute spore-print-color=h numeric
+@attribute spore-print-color=k numeric
+@attribute spore-print-color=n numeric
+@attribute spore-print-color=o numeric
+@attribute spore-print-color=r numeric
+@attribute spore-print-color=u numeric
+@attribute spore-print-color=w numeric
+@attribute spore-print-color=y numeric
+@attribute population=a numeric
+@attribute population=c numeric
+@attribute population=n numeric
+@attribute population=s numeric
+@attribute population=v numeric
+@attribute population=y numeric
+@attribute habitat=d numeric
+@attribute habitat=g numeric
+@attribute habitat=l numeric
+@attribute habitat=m numeric
+@attribute habitat=p numeric
+@attribute habitat=u numeric
+@attribute habitat=w numeric
+@attribute class {edible,poisonous}
+
+@data
+
+
+Classifier Model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                  Class
+Variable                         edible
+=======================================
+cap-shape=b                      0.9531
+cap-shape=c                     -0.9772
+cap-shape=f                     -0.2403
+cap-shape=k                     -0.0211
+cap-shape=s                      1.9067
+cap-shape=x                     -0.3923
+cap-surface=f                    0.1427
+cap-surface=g                   -1.8151
+cap-surface=s                   -0.5521
+cap-surface=y                    0.4851
+cap-color=b                     -0.0184
+cap-color=c                      1.3314
+cap-color=e                      0.0958
+cap-color=g                     -0.5921
+cap-color=n                     -0.2847
+cap-color=p                      4.8457
+cap-color=r                      0.2338
+cap-color=u                       0.226
+cap-color=w                     -1.1189
+cap-color=y                     -0.1417
+bruises=t                       -0.7279
+odor=a                           5.0528
+odor=c                         -10.9212
+odor=f                           -3.713
+odor=l                           5.2235
+odor=m                          -2.6309
+odor=n                           8.9907
+odor=p                         -12.9623
+odor=s                          -1.7917
+odor=y                           -1.927
+gill-attachment=f                -0.351
+gill-spacing=w                   3.0359
+gill-size=n                     -6.0655
+gill-color=b                     -1.968
+gill-color=e                     0.2339
+gill-color=g                      0.369
+gill-color=h                     0.1402
+gill-color=k                     0.3276
+gill-color=n                     0.6716
+gill-color=o                     0.1531
+gill-color=p                     0.4708
+gill-color=r                    -3.7458
+gill-color=u                       0.24
+gill-color=w                     0.7271
+gill-color=y                     0.1213
+stalk-shape=t                    2.1508
+stalk-root=b                    -4.0167
+stalk-root=c                     1.3793
+stalk-root=e                     2.3514
+stalk-root=r                     3.5215
+stalk-surface-above-ring=f       1.9879
+stalk-surface-above-ring=k      -2.1881
+stalk-surface-above-ring=s       0.8106
+stalk-surface-above-ring=y       1.9119
+stalk-surface-below-ring=f       0.2777
+stalk-surface-below-ring=k       0.5414
+stalk-surface-below-ring=s       0.6173
+stalk-surface-below-ring=y      -3.3668
+stalk-color-above-ring=b         0.0485
+stalk-color-above-ring=c        -2.6309
+stalk-color-above-ring=e         0.2007
+stalk-color-above-ring=g         0.5049
+stalk-color-above-ring=n         0.2564
+stalk-color-above-ring=o         1.0299
+stalk-color-above-ring=p         0.1623
+stalk-color-above-ring=w        -0.4516
+stalk-color-above-ring=y        -1.2841
+stalk-color-below-ring=b         0.1123
+stalk-color-below-ring=c        -2.6309
+stalk-color-below-ring=e         0.2108
+stalk-color-below-ring=g         0.5016
+stalk-color-below-ring=n         0.4441
+stalk-color-below-ring=o         1.0299
+stalk-color-below-ring=p         0.1848
+stalk-color-below-ring=w        -0.5587
+stalk-color-below-ring=y        -1.1115
+veil-color=n                      0.729
+veil-color=o                     0.7189
+veil-color=w                    -0.7574
+veil-color=y                    -1.2841
+ring-number=n                   -2.6309
+ring-number=o                   -2.9487
+ring-number=t                    3.7209
+ring-type=e                      1.6445
+ring-type=f                       2.408
+ring-type=l                      0.0444
+ring-type=n                     -2.6309
+ring-type=p                     -1.5982
+spore-print-color=b              0.4063
+spore-print-color=h             -3.9872
+spore-print-color=k              3.1117
+spore-print-color=n              2.8021
+spore-print-color=o                0.46
+spore-print-color=r             -8.6776
+spore-print-color=u              0.8509
+spore-print-color=w             -0.6738
+spore-print-color=y              0.4788
+population=a                     0.3981
+population=c                    -4.5964
+population=n                     0.4209
+population=s                    -3.1396
+population=v                     2.1607
+population=y                     1.9542
+habitat=d                       -0.0487
+habitat=g                       -1.5832
+habitat=l                        1.0914
+habitat=m                        -0.663
+habitat=p                        1.2937
+habitat=u                       -0.7381
+habitat=w                        1.4396
+Intercept                       -2.0656
+
+
+Odds Ratios...
+                                  Class
+Variable                         edible
+=======================================
+cap-shape=b                      2.5938
+cap-shape=c                      0.3764
+cap-shape=f                      0.7864
+cap-shape=k                      0.9791
+cap-shape=s                      6.7309
+cap-shape=x                      0.6755
+cap-surface=f                    1.1534
+cap-surface=g                    0.1628
+cap-surface=s                    0.5758
+cap-surface=y                    1.6243
+cap-color=b                      0.9818
+cap-color=c                      3.7863
+cap-color=e                      1.1005
+cap-color=g                      0.5531
+cap-color=n                      0.7522
+cap-color=p                    127.1876
+cap-color=r                      1.2634
+cap-color=u                      1.2535
+cap-color=w                      0.3266
+cap-color=y                      0.8679
+bruises=t                        0.4829
+odor=a                         156.4599
+odor=c                                0
+odor=f                           0.0244
+odor=l                         185.5864
+odor=m                            0.072
+odor=n                        8028.2475
+odor=p                                0
+odor=s                           0.1667
+odor=y                           0.1456
+gill-attachment=f                 0.704
+gill-spacing=w                  20.8194
+gill-size=n                      0.0023
+gill-color=b                     0.1397
+gill-color=e                     1.2636
+gill-color=g                     1.4462
+gill-color=h                     1.1505
+gill-color=k                     1.3877
+gill-color=n                     1.9574
+gill-color=o                     1.1654
+gill-color=p                     1.6012
+gill-color=r                     0.0236
+gill-color=u                     1.2712
+gill-color=w                      2.069
+gill-color=y                      1.129
+stalk-shape=t                    8.5916
+stalk-root=b                      0.018
+stalk-root=c                     3.9722
+stalk-root=e                       10.5
+stalk-root=r                    33.8368
+stalk-surface-above-ring=f       7.3004
+stalk-surface-above-ring=k       0.1121
+stalk-surface-above-ring=s       2.2492
+stalk-surface-above-ring=y       6.7659
+stalk-surface-below-ring=f       1.3201
+stalk-surface-below-ring=k       1.7185
+stalk-surface-below-ring=s       1.8539
+stalk-surface-below-ring=y       0.0345
+stalk-color-above-ring=b         1.0497
+stalk-color-above-ring=c          0.072
+stalk-color-above-ring=e         1.2223
+stalk-color-above-ring=g         1.6569
+stalk-color-above-ring=n         1.2922
+stalk-color-above-ring=o         2.8007
+stalk-color-above-ring=p         1.1763
+stalk-color-above-ring=w         0.6366
+stalk-color-above-ring=y         0.2769
+stalk-color-below-ring=b         1.1188
+stalk-color-below-ring=c          0.072
+stalk-color-below-ring=e         1.2347
+stalk-color-below-ring=g         1.6513
+stalk-color-below-ring=n         1.5592
+stalk-color-below-ring=o         2.8007
+stalk-color-below-ring=p         1.2029
+stalk-color-below-ring=w         0.5719
+stalk-color-below-ring=y         0.3291
+veil-color=n                      2.073
+veil-color=o                     2.0522
+veil-color=w                     0.4689
+veil-color=y                     0.2769
+ring-number=n                     0.072
+ring-number=o                    0.0524
+ring-number=t                   41.3014
+ring-type=e                      5.1785
+ring-type=f                     11.1115
+ring-type=l                      1.0455
+ring-type=n                       0.072
+ring-type=p                      0.2023
+spore-print-color=b              1.5012
+spore-print-color=h              0.0186
+spore-print-color=k             22.4586
+spore-print-color=n             16.4788
+spore-print-color=o              1.5841
+spore-print-color=r              0.0002
+spore-print-color=u              2.3417
+spore-print-color=w              0.5097
+spore-print-color=y              1.6141
+population=a                      1.489
+population=c                     0.0101
+population=n                     1.5234
+population=s                     0.0433
+population=v                      8.677
+population=y                     7.0582
+habitat=d                        0.9525
+habitat=g                        0.2053
+habitat=l                        2.9785
+habitat=m                        0.5153
+habitat=p                        3.6462
+habitat=u                         0.478
+habitat=w                        4.2191
+
+
+Time taken to build model: 0.64 seconds
+
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        6499              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances             6499     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     edible
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     poisonous
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 3366    0 |    a = edible
+    0 3133 |    b = poisonous
+
+Time taken to test model on test data: 0.01 seconds
+
+=== Error on test data ===
+
+Correctly Classified Instances        1625              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances             1625     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     edible
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     poisonous
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 842   0 |   a = edible
+   0 783 |   b = poisonous
+
+
+Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @6df97b55
+Add --add-opens java.base/java.lang=ALL-UNNAMED as an option after the java command.
+Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @6df97b55
+Add --add-opens java.base/java.lang=ALL-UNNAMED as an option after the java command.
+Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @6df97b55
+Add --add-opens java.base/java.lang=ALL-UNNAMED as an option after the java command.

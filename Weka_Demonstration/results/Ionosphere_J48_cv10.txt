@@ -1,0 +1,150 @@
+
+Options: -F "weka.filters.MultiFilter -F "weka.filters.unsupervised.attribute.ReplaceMissingValues" -F "weka.filters.unsupervised.attribute.NominalToBinary" -F "weka.filters.unsupervised.attribute.RemoveUseless -M 100.0" -F "weka.filters.unsupervised.attribute.Standardize"" -W weka.classifiers.trees.J48 -- -C 0.25 -M 2 
+
+=== Classifier model (full training set) ===
+
+FilteredClassifier using weka.classifiers.trees.J48 -C 0.25 -M 2 on data filtered through weka.filters.MultiFilter -F "weka.filters.unsupervised.attribute.ReplaceMissingValues " -F "weka.filters.unsupervised.attribute.NominalToBinary -R first-last" -F "weka.filters.unsupervised.attribute.RemoveUseless -M 100.0" -F "weka.filters.unsupervised.attribute.Standardize " -S 1163900331
+
+Filtered Header
+@relation 'Ionosphere-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NominalToBinary-Rfirst-last-weka.filters.unsupervised.attribute.RemoveUseless-M100.0-weka.filters.unsupervised.attribute.Standardize-weka.filters.MultiFilter-Fweka.filters.unsupervised.attribute.ReplaceMissingValues-Fweka.filters.unsupervised.attribute.NominalToBinary -R first-last-Fweka.filters.unsupervised.attribute.RemoveUseless -M 100.0-Fweka.filters.unsupervised.attribute.Standardize-S1163900331'
+
+@attribute x01 numeric
+@attribute x03 numeric
+@attribute x04 numeric
+@attribute x05 numeric
+@attribute x06 numeric
+@attribute x07 numeric
+@attribute x08 numeric
+@attribute x09 numeric
+@attribute x10 numeric
+@attribute x11 numeric
+@attribute x12 numeric
+@attribute x13 numeric
+@attribute x14 numeric
+@attribute x15 numeric
+@attribute x16 numeric
+@attribute x17 numeric
+@attribute x18 numeric
+@attribute x19 numeric
+@attribute x20 numeric
+@attribute x21 numeric
+@attribute x22 numeric
+@attribute x23 numeric
+@attribute x24 numeric
+@attribute x25 numeric
+@attribute x26 numeric
+@attribute x27 numeric
+@attribute x28 numeric
+@attribute x29 numeric
+@attribute x30 numeric
+@attribute x31 numeric
+@attribute x32 numeric
+@attribute x33 numeric
+@attribute x34 numeric
+@attribute class {good,bad}
+
+@data
+
+
+Classifier Model
+J48 pruned tree
+------------------
+
+x05 <= -1.087814: bad (52.0)
+x05 > -1.087814
+|   x01 <= -2.936709: bad (15.0)
+|   x01 > -2.936709
+|   |   x08 <= -1.333656
+|   |   |   x28 <= -1.143298: good (3.0/1.0)
+|   |   |   x28 > -1.143298: bad (11.0)
+|   |   x08 > -1.333656
+|   |   |   x06 <= -0.718004
+|   |   |   |   x09 <= 0.954777: bad (7.0)
+|   |   |   |   x09 > 0.954777: good (3.0)
+|   |   |   x06 > -0.718004
+|   |   |   |   x03 <= -0.480453
+|   |   |   |   |   x03 <= -1.158019: bad (5.0)
+|   |   |   |   |   x03 > -1.158019
+|   |   |   |   |   |   x03 <= -0.601767: good (10.0)
+|   |   |   |   |   |   x03 > -0.601767: bad (4.0/1.0)
+|   |   |   |   x03 > -0.480453
+|   |   |   |   |   x04 <= -0.212634
+|   |   |   |   |   |   x16 <= 0.697739
+|   |   |   |   |   |   |   x07 <= 0.137501
+|   |   |   |   |   |   |   |   x04 <= -0.570017: good (2.0)
+|   |   |   |   |   |   |   |   x04 > -0.570017: bad (2.0)
+|   |   |   |   |   |   |   x07 > 0.137501: good (26.0)
+|   |   |   |   |   |   x16 > 0.697739: bad (3.0)
+|   |   |   |   |   x04 > -0.212634: good (137.0/1.0)
+
+Number of Leaves  : 	14
+
+Size of the tree : 	27
+
+
+Time taken to build model: 0.11 seconds
+
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         277               98.9286 %
+Incorrectly Classified Instances         3                1.0714 %
+Kappa statistic                          0.9766
+Mean absolute error                      0.0172
+Root mean squared error                  0.0928
+Relative absolute error                  3.7455 %
+Root relative squared error             19.3595 %
+Total Number of Instances              280     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.994    0.020    0.989      0.994    0.992      0.977    0.996     0.995     good
+                 0.980    0.006    0.990      0.980    0.985      0.977    0.996     0.994     bad
+Weighted Avg.    0.989    0.015    0.989      0.989    0.989      0.977    0.996     0.995     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 179   1 |   a = good
+   2  98 |   b = bad
+
+Time taken to perform cross-validation: 0.12 seconds
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         255               91.0714 %
+Incorrectly Classified Instances        25                8.9286 %
+Kappa statistic                          0.8025
+Mean absolute error                      0.1029
+Root mean squared error                  0.2852
+Relative absolute error                 22.3891 %
+Root relative squared error             59.515  %
+Total Number of Instances              280     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.950    0.160    0.914      0.950    0.932      0.804    0.920     0.928     good
+                 0.840    0.050    0.903      0.840    0.870      0.804    0.920     0.886     bad
+Weighted Avg.    0.911    0.121    0.910      0.911    0.910      0.804    0.920     0.913     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 171   9 |   a = good
+  16  84 |   b = bad
+
+
+Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @735b478
+Add --add-opens java.base/java.lang=ALL-UNNAMED as an option after the java command.
+Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @735b478
+Add --add-opens java.base/java.lang=ALL-UNNAMED as an option after the java command.
+Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @735b478
+Add --add-opens java.base/java.lang=ALL-UNNAMED as an option after the java command.

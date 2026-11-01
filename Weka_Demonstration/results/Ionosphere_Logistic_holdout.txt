@@ -1,0 +1,194 @@
+
+Options: -F "weka.filters.MultiFilter -F "weka.filters.unsupervised.attribute.ReplaceMissingValues" -F "weka.filters.unsupervised.attribute.NominalToBinary" -F "weka.filters.unsupervised.attribute.RemoveUseless -M 100.0" -F "weka.filters.unsupervised.attribute.Standardize"" -W weka.classifiers.functions.Logistic -- -R 1.0E-8 -M 1000 
+
+=== Classifier model (full training set) ===
+
+FilteredClassifier using weka.classifiers.functions.Logistic -R 1.0E-8 -M 1000 -num-decimal-places 4 on data filtered through weka.filters.MultiFilter -F "weka.filters.unsupervised.attribute.ReplaceMissingValues " -F "weka.filters.unsupervised.attribute.NominalToBinary -R first-last" -F "weka.filters.unsupervised.attribute.RemoveUseless -M 100.0" -F "weka.filters.unsupervised.attribute.Standardize " -S 1163900331
+
+Filtered Header
+@relation 'Ionosphere-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NominalToBinary-Rfirst-last-weka.filters.unsupervised.attribute.RemoveUseless-M100.0-weka.filters.unsupervised.attribute.Standardize-weka.filters.MultiFilter-Fweka.filters.unsupervised.attribute.ReplaceMissingValues-Fweka.filters.unsupervised.attribute.NominalToBinary -R first-last-Fweka.filters.unsupervised.attribute.RemoveUseless -M 100.0-Fweka.filters.unsupervised.attribute.Standardize-S1163900331'
+
+@attribute x01 numeric
+@attribute x03 numeric
+@attribute x04 numeric
+@attribute x05 numeric
+@attribute x06 numeric
+@attribute x07 numeric
+@attribute x08 numeric
+@attribute x09 numeric
+@attribute x10 numeric
+@attribute x11 numeric
+@attribute x12 numeric
+@attribute x13 numeric
+@attribute x14 numeric
+@attribute x15 numeric
+@attribute x16 numeric
+@attribute x17 numeric
+@attribute x18 numeric
+@attribute x19 numeric
+@attribute x20 numeric
+@attribute x21 numeric
+@attribute x22 numeric
+@attribute x23 numeric
+@attribute x24 numeric
+@attribute x25 numeric
+@attribute x26 numeric
+@attribute x27 numeric
+@attribute x28 numeric
+@attribute x29 numeric
+@attribute x30 numeric
+@attribute x31 numeric
+@attribute x32 numeric
+@attribute x33 numeric
+@attribute x34 numeric
+@attribute class {good,bad}
+
+@data
+
+
+Classifier Model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                      Class
+Variable               good
+===========================
+x01                 18.7863
+x03                  2.8192
+x04                 -3.8442
+x05                  2.0278
+x06                  2.4336
+x07                 -0.1492
+x08                  2.0691
+x09                  3.1418
+x10                  2.1738
+x11                 -3.8109
+x12                  1.8218
+x13                 -1.9032
+x14                  0.5402
+x15                  6.7124
+x16                 -3.1445
+x17                  0.3681
+x18                  2.0544
+x19                 -5.9852
+x20                  1.2123
+x21                   1.106
+x22                  -3.828
+x23                   0.833
+x24                    0.81
+x25                   1.522
+x26                 -2.4124
+x27                 -3.1452
+x28                 -0.7936
+x29                  2.6631
+x30                  4.9421
+x31                  2.1138
+x32                  4.8556
+x33                 -0.1954
+x34                 -4.4379
+Intercept           -3.8148
+
+
+Odds Ratios...
+                      Class
+Variable               good
+===========================
+x01          144145700.7283
+x03                 16.7629
+x04                  0.0214
+x05                  7.5973
+x06                 11.3994
+x07                  0.8614
+x08                   7.918
+x09                 23.1466
+x10                   8.792
+x11                  0.0221
+x12                  6.1829
+x13                  0.1491
+x14                  1.7164
+x15                822.5753
+x16                  0.0431
+x17                   1.445
+x18                  7.8019
+x19                  0.0025
+x20                  3.3612
+x21                  3.0222
+x22                  0.0218
+x23                  2.3003
+x24                  2.2479
+x25                  4.5816
+x26                  0.0896
+x27                  0.0431
+x28                  0.4522
+x29                 14.3401
+x30                140.0579
+x31                  8.2798
+x32                128.4567
+x33                  0.8225
+x34                  0.0118
+
+
+Time taken to build model: 0.12 seconds
+
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         268               95.7143 %
+Incorrectly Classified Instances        12                4.2857 %
+Kappa statistic                          0.9067
+Mean absolute error                      0.066 
+Root mean squared error                  0.1798
+Relative absolute error                 14.3597 %
+Root relative squared error             37.5225 %
+Total Number of Instances              280     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.967    0.060    0.967      0.967    0.967      0.907    0.992     0.996     good
+                 0.940    0.033    0.940      0.940    0.940      0.907    0.992     0.985     bad
+Weighted Avg.    0.957    0.050    0.957      0.957    0.957      0.907    0.992     0.992     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 174   6 |   a = good
+   6  94 |   b = bad
+
+Time taken to test model on test data: 0 seconds
+
+=== Error on test data ===
+
+Correctly Classified Instances          62               88.5714 %
+Incorrectly Classified Instances         8               11.4286 %
+Kappa statistic                          0.7466
+Mean absolute error                      0.1221
+Root mean squared error                  0.3324
+Relative absolute error                 26.5712 %
+Root relative squared error             69.3704 %
+Total Number of Instances               70     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.933    0.200    0.894      0.933    0.913      0.748    0.832     0.801     good
+                 0.800    0.067    0.870      0.800    0.833      0.748    0.832     0.874     bad
+Weighted Avg.    0.886    0.152    0.885      0.886    0.885      0.748    0.832     0.827     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 42  3 |  a = good
+  5 20 |  b = bad
+
+
+Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @6df97b55
+Add --add-opens java.base/java.lang=ALL-UNNAMED as an option after the java command.
+Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @6df97b55
+Add --add-opens java.base/java.lang=ALL-UNNAMED as an option after the java command.
+Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @6df97b55
+Add --add-opens java.base/java.lang=ALL-UNNAMED as an option after the java command.

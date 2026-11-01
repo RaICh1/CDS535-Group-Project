@@ -40,3 +40,7 @@ Ionosphere: UCI ID 52, https://doi.org/10.24432/C5W01B. Sigillito, Wing, Hutton 
 Both UCI pages specify CC BY 4.0. Original source notes remain in `data/`. Changes include duplicate removal for Ionosphere, named columns and binary label mapping. See `results/data_sha256.json` for data hashes and `results/environment.json` for the execution environment.
 
 These are benchmark results and do not establish real-world deployment safety or universal model superiority.
+
+## Weka demonstration
+
+See [Weka_Demonstration](Weka_Demonstration) for actual Weka 3.8.7 experiments, ARFF data, saved models, reproducible commands and a real Explorer launcher. Weka results are separate from the Python results above.

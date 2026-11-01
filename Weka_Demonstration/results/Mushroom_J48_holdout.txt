@@ -1,0 +1,218 @@
+
+Options: -F "weka.filters.MultiFilter -F "weka.filters.unsupervised.attribute.ReplaceMissingValues" -F "weka.filters.unsupervised.attribute.NominalToBinary" -F "weka.filters.unsupervised.attribute.RemoveUseless -M 100.0" -F "weka.filters.unsupervised.attribute.Standardize"" -W weka.classifiers.trees.J48 -- -C 0.25 -M 2 
+
+=== Classifier model (full training set) ===
+
+FilteredClassifier using weka.classifiers.trees.J48 -C 0.25 -M 2 on data filtered through weka.filters.MultiFilter -F "weka.filters.unsupervised.attribute.ReplaceMissingValues " -F "weka.filters.unsupervised.attribute.NominalToBinary -R first-last" -F "weka.filters.unsupervised.attribute.RemoveUseless -M 100.0" -F "weka.filters.unsupervised.attribute.Standardize " -S -1893870233
+
+Filtered Header
+@relation 'Mushroom-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NominalToBinary-Rfirst-last-weka.filters.unsupervised.attribute.RemoveUseless-M100.0-weka.filters.unsupervised.attribute.Standardize-weka.filters.MultiFilter-Fweka.filters.unsupervised.attribute.ReplaceMissingValues-Fweka.filters.unsupervised.attribute.NominalToBinary -R first-last-Fweka.filters.unsupervised.attribute.RemoveUseless -M 100.0-Fweka.filters.unsupervised.attribute.Standardize-S-1893870233'
+
+@attribute cap-shape=b numeric
+@attribute cap-shape=c numeric
+@attribute cap-shape=f numeric
+@attribute cap-shape=k numeric
+@attribute cap-shape=s numeric
+@attribute cap-shape=x numeric
+@attribute cap-surface=f numeric
+@attribute cap-surface=g numeric
+@attribute cap-surface=s numeric
+@attribute cap-surface=y numeric
+@attribute cap-color=b numeric
+@attribute cap-color=c numeric
+@attribute cap-color=e numeric
+@attribute cap-color=g numeric
+@attribute cap-color=n numeric
+@attribute cap-color=p numeric
+@attribute cap-color=r numeric
+@attribute cap-color=u numeric
+@attribute cap-color=w numeric
+@attribute cap-color=y numeric
+@attribute bruises=t numeric
+@attribute odor=a numeric
+@attribute odor=c numeric
+@attribute odor=f numeric
+@attribute odor=l numeric
+@attribute odor=m numeric
+@attribute odor=n numeric
+@attribute odor=p numeric
+@attribute odor=s numeric
+@attribute odor=y numeric
+@attribute gill-attachment=f numeric
+@attribute gill-spacing=w numeric
+@attribute gill-size=n numeric
+@attribute gill-color=b numeric
+@attribute gill-color=e numeric
+@attribute gill-color=g numeric
+@attribute gill-color=h numeric
+@attribute gill-color=k numeric
+@attribute gill-color=n numeric
+@attribute gill-color=o numeric
+@attribute gill-color=p numeric
+@attribute gill-color=r numeric
+@attribute gill-color=u numeric
+@attribute gill-color=w numeric
+@attribute gill-color=y numeric
+@attribute stalk-shape=t numeric
+@attribute stalk-root=b numeric
+@attribute stalk-root=c numeric
+@attribute stalk-root=e numeric
+@attribute stalk-root=r numeric
+@attribute stalk-surface-above-ring=f numeric
+@attribute stalk-surface-above-ring=k numeric
+@attribute stalk-surface-above-ring=s numeric
+@attribute stalk-surface-above-ring=y numeric
+@attribute stalk-surface-below-ring=f numeric
+@attribute stalk-surface-below-ring=k numeric
+@attribute stalk-surface-below-ring=s numeric
+@attribute stalk-surface-below-ring=y numeric
+@attribute stalk-color-above-ring=b numeric
+@attribute stalk-color-above-ring=c numeric
+@attribute stalk-color-above-ring=e numeric
+@attribute stalk-color-above-ring=g numeric
+@attribute stalk-color-above-ring=n numeric
+@attribute stalk-color-above-ring=o numeric
+@attribute stalk-color-above-ring=p numeric
+@attribute stalk-color-above-ring=w numeric
+@attribute stalk-color-above-ring=y numeric
+@attribute stalk-color-below-ring=b numeric
+@attribute stalk-color-below-ring=c numeric
+@attribute stalk-color-below-ring=e numeric
+@attribute stalk-color-below-ring=g numeric
+@attribute stalk-color-below-ring=n numeric
+@attribute stalk-color-below-ring=o numeric
+@attribute stalk-color-below-ring=p numeric
+@attribute stalk-color-below-ring=w numeric
+@attribute stalk-color-below-ring=y numeric
+@attribute veil-color=n numeric
+@attribute veil-color=o numeric
+@attribute veil-color=w numeric
+@attribute veil-color=y numeric
+@attribute ring-number=n numeric
+@attribute ring-number=o numeric
+@attribute ring-number=t numeric
+@attribute ring-type=e numeric
+@attribute ring-type=f numeric
+@attribute ring-type=l numeric
+@attribute ring-type=n numeric
+@attribute ring-type=p numeric
+@attribute spore-print-color=b numeric
+@attribute spore-print-color=h numeric
+@attribute spore-print-color=k numeric
+@attribute spore-print-color=n numeric
+@attribute spore-print-color=o numeric
+@attribute spore-print-color=r numeric
+@attribute spore-print-color=u numeric
+@attribute spore-print-color=w numeric
+@attribute spore-print-color=y numeric
+@attribute population=a numeric
+@attribute population=c numeric
+@attribute population=n numeric
+@attribute population=s numeric
+@attribute population=v numeric
+@attribute population=y numeric
+@attribute habitat=d numeric
+@attribute habitat=g numeric
+@attribute habitat=l numeric
+@attribute habitat=m numeric
+@attribute habitat=p numeric
+@attribute habitat=u numeric
+@attribute habitat=w numeric
+@attribute class {edible,poisonous}
+
+@data
+
+
+Classifier Model
+J48 pruned tree
+------------------
+
+odor=n <= -0.869423
+|   odor=l <= -0.234207
+|   |   odor=a <= -0.226804: poisonous (3045.0)
+|   |   odor=a > -0.226804: edible (318.0)
+|   odor=l > -0.234207: edible (338.0)
+odor=n > -0.869423
+|   spore-print-color=r <= -0.088928
+|   |   stalk-surface-below-ring=y <= -0.190229
+|   |   |   gill-size=n <= -0.665727: edible (2548.0)
+|   |   |   gill-size=n > -0.665727
+|   |   |   |   cap-color=w <= -0.386034: edible (134.0)
+|   |   |   |   cap-color=w > -0.386034
+|   |   |   |   |   bruises=t <= -0.84324: edible (14.0)
+|   |   |   |   |   bruises=t > -0.84324: poisonous (6.0)
+|   |   stalk-surface-below-ring=y > -0.190229
+|   |   |   gill-size=n <= -0.665727: edible (14.0)
+|   |   |   gill-size=n > -0.665727: poisonous (31.0)
+|   spore-print-color=r > -0.088928: poisonous (51.0)
+
+Number of Leaves  : 	10
+
+Size of the tree : 	19
+
+
+Time taken to build model: 0.38 seconds
+
+Time taken to test model on training data: 0.04 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        6499              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances             6499     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     edible
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     poisonous
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 3366    0 |    a = edible
+    0 3133 |    b = poisonous
+
+Time taken to test model on test data: 0.01 seconds
+
+=== Error on test data ===
+
+Correctly Classified Instances        1625              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances             1625     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     edible
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     poisonous
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 842   0 |   a = edible
+   0 783 |   b = poisonous
+
+
+Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @735b478
+Add --add-opens java.base/java.lang=ALL-UNNAMED as an option after the java command.
+Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @735b478
+Add --add-opens java.base/java.lang=ALL-UNNAMED as an option after the java command.
+Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @735b478
+Add --add-opens java.base/java.lang=ALL-UNNAMED as an option after the java command.

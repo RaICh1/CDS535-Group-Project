@@ -1,0 +1,17 @@
+dataset,model,protocol,accuracy,precision,recall,f1,auc,seconds
+Mushroom,J48,cv10,1.0,1.000,1.000,1.000,1.000,1.814
+Mushroom,J48,holdout,1.0,1.000,1.000,1.000,1.000,0.715
+Mushroom,RandomForest,cv10,1.0,1.000,1.000,1.000,1.000,11.031
+Mushroom,RandomForest,holdout,1.0,1.000,1.000,1.000,1.000,1.868
+Mushroom,Logistic,cv10,1.0,1.000,1.000,1.000,1.000,4.085
+Mushroom,Logistic,holdout,1.0,1.000,1.000,1.000,1.000,0.989
+Mushroom,SMO,cv10,0.9990770000000001,0.998,1.000,0.999,0.999,117.871
+Mushroom,SMO,holdout,0.9993850000000001,1.000,0.999,0.999,0.999,16.864
+Ionosphere,J48,cv10,0.910714,0.903,0.840,0.870,0.920,0.433
+Ionosphere,J48,holdout,0.9,0.846,0.880,0.863,0.884,0.338
+Ionosphere,RandomForest,cv10,0.946429,0.967,0.880,0.921,0.977,1.218
+Ionosphere,RandomForest,holdout,0.928571,0.917,0.880,0.898,0.981,0.544
+Ionosphere,Logistic,cv10,0.857143,0.849,0.730,0.785,0.847,0.488
+Ionosphere,Logistic,holdout,0.885714,0.870,0.800,0.833,0.832,0.34
+Ionosphere,SMO,cv10,0.9357139999999999,0.936,0.880,0.907,0.971,0.544
+Ionosphere,SMO,holdout,0.928571,0.917,0.880,0.898,0.983,0.391
