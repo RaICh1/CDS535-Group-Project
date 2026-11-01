@@ -1,0 +1,16 @@
+{
+  "data\\ionosphere.csv": "749c2420b93f666bf9288987394eef3d878b0ba5adb31994159251b42524142c",
+  "data\\ionosphere.zip": "4d218ece62756c99659011a13052d06464f13cb2b3d0410ce2aef16de1403860",
+  "data\\Ionosphere_schema.csv": "5d67e7eb44256ea494bb176186f734b1e67cac13865c579b4a45fafe35f725f5",
+  "data\\mushroom.csv": "8736a34b748d6c4c48027744cb9070c92bb5adfb6df205042582628544f11782",
+  "data\\mushroom.zip": "face32f32647e0d939f6233f36dd30dd5d619ae9f3f9b8e10bea4ac7e1f60b1a",
+  "data\\Mushroom_schema.csv": "50576ef72edb3e25038e54307c7da8be78b036b256c0eb2e23ac1bc1e5de87b2",
+  "data\\ionosphere\\Index": "f9628bd26052d1e26a7ffa8914cabef454c7d6d7a4ac6427285a00e16212c4fc",
+  "data\\ionosphere\\ionosphere.data": "46d52186b84e20be52918adb93e8fb9926b34795ff7504c24350ae0616a04bbd",
+  "data\\ionosphere\\ionosphere.names": "a368e4fd9b910a3ac97fa306add17446c13105367e17f5b691455db2ea8411cf",
+  "data\\mushroom\\agaricus-lepiota.data": "e65d082030501a3ebcbcd7c9f7c71aa9d28fdfff463bf4cf4716a3fe13ac360e",
+  "data\\mushroom\\agaricus-lepiota.names": "79e440566900901a5900febc1f3c9659e3746e306a5fa1aed4d084a1e4da76fd",
+  "data\\mushroom\\expanded.Z": "cc1723a2bb79329843d902680467b0adde972ecdc171c65138f08c03135885dc",
+  "data\\mushroom\\Index": "b901c28403c8eeec6e72e76608411a14485af9f4567175ae5d7ee119649435d7",
+  "data\\mushroom\\README": "982356018292e0d0cdfb310083aba2f0ef98db8961a87e5b7043f170b8106d22"
+}

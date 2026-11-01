@@ -1,0 +1,36 @@
+{
+  "Mushroom": {
+    "raw_n": 8124,
+    "n": 8124,
+    "features": 22,
+    "class_counts": {
+      "0": 4208,
+      "1": 3916
+    },
+    "missing_cells": 2480,
+    "missing_rows": 2480,
+    "constant_columns": [
+      "veil-type"
+    ],
+    "duplicate_predictors": 0,
+    "development_n": 6499,
+    "test_n": 1625
+  },
+  "Ionosphere": {
+    "raw_n": 351,
+    "n": 350,
+    "features": 34,
+    "class_counts": {
+      "0": 225,
+      "1": 125
+    },
+    "missing_cells": 0,
+    "missing_rows": 0,
+    "constant_columns": [
+      "x02"
+    ],
+    "duplicate_predictors": 0,
+    "development_n": 280,
+    "test_n": 70
+  }
+}
