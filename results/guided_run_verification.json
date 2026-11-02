@@ -1,0 +1,26 @@
+{
+  "model_comparison.csv": {
+    "rows": 8,
+    "matches_previous": true
+  },
+  "fold_metrics.csv": {
+    "rows": 80,
+    "matches_previous": true
+  },
+  "ablation_folds.csv": {
+    "rows": 40,
+    "matches_previous": true
+  },
+  "clustering.csv": {
+    "rows": 10,
+    "matches_previous": true
+  },
+  "Mushroom_splits.csv": {
+    "rows": 8124,
+    "matches_previous": true
+  },
+  "Ionosphere_splits.csv": {
+    "rows": 350,
+    "matches_previous": true
+  }
+}

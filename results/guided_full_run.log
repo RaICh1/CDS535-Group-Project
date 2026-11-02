@@ -1,0 +1,11 @@
+DATASET Mushroom
+Decision tree CV F1 0.9997 test 1.0
+Random forest CV F1 1.0 test 1.0
+Logistic regression CV F1 0.9997 test 1.0
+RBF SVM CV F1 1.0 test 1.0
+DATASET Ionosphere
+Decision tree CV F1 0.8474 test 0.8627
+Random forest CV F1 0.9056 test 0.898
+Logistic regression CV F1 0.8203 test 0.8
+RBF SVM CV F1 0.905 test 0.898
+COMPLETE

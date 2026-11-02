@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn.pipeline import Pipeline
 from sklearn.base import clone
 from sklearn.metrics import confusion_matrix
-from run_experiments import ROOT, load, prep, MODELS, getscore, scores
+from run_experiments import (ROOT, load_datasets as load, make_preprocessor as prep, MODELS, decision_scores as getscore, compute_scores as scores)
 
 x,y=load()["Ionosphere"]
 split=pd.read_csv(ROOT/"results/Ionosphere_splits.csv")
